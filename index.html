@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			.wrap {
+				position: absolute;
+				margin: 300px 50px;
+				width: 500px;
+				animation: houzuo 1s both 0s ease-out infinite;
+			}
+			@keyframes houzuo{
+				from{transform: scale(1.01);}
+				to{transform: scale(1);}
+			}
+			.div1,.div2,.div4,.div5,.div7,.div8 {
+				width: 60px;
+				height: 60px;
+				background: black;
+				border-radius:50%;
+			}
+			.div1 {
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			.div2 {
+				position: absolute;
+				left: 70px;
+				top: 0;
+			}
+			.div11,.div21 {
+				position: absolute;
+				left: 10px;
+				top: 10px;
+				width: 40px;
+				height: 40px;
+				background: green;
+				border-radius:50%;
+			}
+			.div3,.div6,.div9 {
+				width: 80px;
+				height: 12px;
+				border-radius: 5px;
+				background: gray;
+			}
+			.div3 {
+				position: absolute;
+				top: -1px;
+				left: 25px;
+				animation: div3 1s both 0s linear infinite;
+			}
+			@keyframes div3{
+				0% {transform: translate(0, 0);}
+				10% {transform: translate(17.7px, 7.3px);}
+				20% {transform: translate(25px, 25px);}
+				40% {transform: translate(17.7px,42.7px);}
+				50% {transform: translate(0, 50px);}
+				60% {transform: translate(-17.7px,42.7px);}
+				80% {transform: translate(-25px,25px);}
+				90% {transform: translate(-17.7px,7.3px);}
+				100% {transform: translate(0, 0);}
+			}
+			.div31 {
+				position: absolute;
+				top: 1px;
+				left: 1px;
+				width: 10px;
+				height: 10px;
+				background: teal;
+				border-radius: 50%;
+			}
+			.div32 {
+				position: absolute;
+				top: 1px;
+				right: 1px;
+				width: 10px;
+				height: 10px;
+				background: teal;
+				border-radius: 50%;
+			}
+			.div4 {
+				position: absolute;
+				left: 140px;
+				top: 0;
+			}
+			.div5 {
+				position: absolute;
+				left: 210px;
+				top: 0;
+			}
+			.div6 {
+				position: absolute;
+				top: -1px;
+				left: 165px;
+				animation: div6 1s both 0s linear infinite;
+			}
+			@keyframes div6{
+				0% {transform: translate(0, 0);}
+				10% {transform: translate(17.7px, 7.3px);}
+				20% {transform: translate(25px, 25px);}
+				40% {transform: translate(17.7px,42.7px);}
+				50% {transform: translate(0, 50px);}
+				60% {transform: translate(-17.7px,42.7px);}
+				80% {transform: translate(-25px,25px);}
+				90% {transform: translate(-17.7px,7.3px);}
+				100% {transform: translate(0, 0);}
+			}
+			
+			.div7 {
+				position: absolute;
+				left: 280px;
+				top: 0;
+			}
+			.div8 {
+				position: absolute;
+				left: 350px;
+				top: 0;
+			}
+			.div9 {
+				position: absolute;
+				top: -1px;
+				left: 305px;
+				animation: div9 1s both 0s linear infinite;
+			}
+			@keyframes div9{
+				0% {transform: translate(0, 0);}
+				10% {transform: translate(17.7px, 7.3px);}
+				20% {transform: translate(25px, 25px);}
+				40% {transform: translate(17.7px,42.7px);}
+				50% {transform: translate(0, 50px);}
+				60% {transform: translate(-17.7px,42.7px);}
+				80% {transform: translate(-25px,25px);}
+				90% {transform: translate(-17.7px,7.3px);}
+				100% {transform: translate(0, 0);}
+			}
+			.div10 {
+				position: absolute;
+				left: -5px;
+				top: -5px;
+				width: 410px;
+				height: 60px;
+				background: grey;
+				border: 5px solid #333366;
+				border-radius: 35px;
+			}
+			.div10_bottom div {
+				width: 5px;
+				height: 5px;
+				background: black;
+				border-radius: 50%;
+			}
+			.div10_bottom div:nth-child(1) {
+				position: absolute;
+				top: 60px;
+				left: 97px;
+				animation: child1 1s both 0s linear infinite;
+			}
+			@keyframes child1{
+				from{transform: translate(0);}
+				to{transform: translate(-80px);}
+			}
+			.div10_bottom div:nth-child(2) {
+				position: absolute;
+				top: 60px;
+				left: 167px;
+				animation: child2 1s both 0s linear infinite;
+			}
+			@keyframes child2{
+				from{transform: translate(0);}
+				to{transform: translate(-80px);}
+			}
+			.div10_bottom div:nth-child(3) {
+				position: absolute;
+				top: 60px;
+				left: 237px;
+				animation: child3 1s both 0s linear infinite;
+			}
+			@keyframes child3{
+				from{transform: translate(0);}
+				to{transform: translate(-80px);}
+			}
+			.div10_bottom div:nth-child(4) {
+				position: absolute;
+				top: 60px;
+				left: 307px;
+				animation: child4 1s both 0s linear infinite;
+			}
+			@keyframes child4{
+				from{transform: translate(0);}
+				to{transform: translate(-80px);}
+			}
+			.div10_bottom div:nth-child(5) {
+				position: absolute;
+				top: 60px;
+				left: 377px;
+				animation: child5 1s both 0s linear infinite;
+			}
+			@keyframes child5{
+				from{transform: translate(0);}
+				to{transform: translate(-80px);}
+			}
+			.div10 .left {
+				position: absolute;
+				top: 25px;
+				left: -5px;
+				width: 5px;
+				height: 5px;
+				background: black;
+				border-radius: 50%;
+				animation: child_left 1s both 0s linear infinite;
+				opacity: 0;
+			}
+			@keyframes child_left{
+				from{opacity: 0;}
+				to{opacity: 1;}
+			}
+			.div10 .right {
+				position: absolute;
+				top: 25px;
+				right: -5px;
+				width: 5px;
+				height: 5px;
+				background: black;
+				border-radius: 50%;
+				animation: child_right 1s both 0s linear infinite;
+				opacity: 0;
+			}
+			@keyframes child_right{
+				from{opacity: 0;}
+				to{opacity: 1;}
+			}
+			.wrap .weiqun {
+				position: absolute;
+				left: -20px;
+				top: -10px;
+				width: 420px;
+				height: 8px;
+				background: darkolivegreen;
+				border-radius: 6px;
+				border-left:10px solid white;
+				border-right:40px solid white;
+				border-bottom: 20px solid darkkhaki;
+				z-index: 222;
+			}
+			.wrap .cezhuangjia {
+				position: absolute;
+				top: -50px;
+				left: -10px;
+				width: 350px;
+				height: 10px;
+				border-left: 20px solid white;
+				border-right:30px solid white;
+				border-bottom: 30px solid darkolivegreen;
+				z-index: 222;
+			}
+			.wrap .paota {
+				position: absolute;
+				top: -100px;
+				left: 50px;
+				width: 120px;
+				height: 12px;
+				border-radius: 10px;
+				border-left: 20px solid white;
+				border-right: 30px solid white;
+				border-bottom: 50px solid #4d515a;
+				animation: paota 1s both 0s ease-out infinite;
+			}
+			@keyframes paota{
+				from{transform: scale(1.1);}
+				to{transform: scale(1);}
+			}
+			.wrap .paoguan {
+				position: absolute;
+				left: 120px;
+				top: 10px;
+				width: 300px;
+				height: 10px;
+				background: #808080;
+				border-radius: 4px;
+				border-right: 3px solid black;
+				transform: rotate(-5deg);
+			}
+			.wrap .xiaoyanqi {
+				position: absolute;
+				left: 340px;
+				top: -3px;
+				width: 60px;
+				height: 18px;
+				background: #808080;
+				border-radius: 8px;
+				transform: rotate(-5deg);
+			}
+			.wrap .paogen {
+				position: absolute;
+				left: 120px;
+				top: 13px;
+				width: 30px;
+				height: 30px;
+				background: #4d515a;
+				border-top-right-radius: 8px;
+				border-bottom-right-radius: 8px;
+				transform: rotate(-5deg);
+			}
+			.wrap .paotagai {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 120px;
+				height: 10px;
+				border-bottom: 1px solid black;
+				border-top-left-radius: 8px;
+				border-top-right-radius: 10px;
+				background: #4d515a;
+			}
+			.wrap .men {
+				position: absolute;
+				left: 10px;
+				top: 15px;
+				width: 60px;
+				height: 35px;
+				border-radius: 8px;
+				background: silver;
+			}
+			.men div {
+				width: 5px;
+				height: 5px;
+				background: gray;
+				border-radius: 50%;
+			}
+			.men div:nth-child(1) {
+				position: absolute;
+				left: 10px;
+				top: 5px;
+			}
+			.men div:nth-child(2) {
+				position: absolute;
+				left: 40px;
+				top: 5px;
+			}
+			.men div:nth-child(3) {
+				position: absolute;
+				left: 40px;
+				top: 25px;
+			}
+			.men div:nth-child(4) {
+				position: absolute;
+				left: 10px;
+				top: 25px;
+			}
+			.men div:nth-child(5) {
+				position: absolute;
+				width: 3px;
+				height: 30px;
+				left: 55px;
+				top: 2px;
+				background: black;
+			}
+			.men div:nth-child(6) {
+				position: absolute;
+				width: 3px;
+				height: 30px;
+				left: 2px;
+				top: 2px;
+				background: black;
+			}
+			
+			
+			.wrap .paotagai .canggai {
+				position: absolute;
+				left: 20px;
+				top: -15px;
+				width: 50px;
+				height: 15px;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+				background: black;
+			}
+			.wrap .paotagai .tianxian {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 1px;
+				height: 100px;
+				background: black;
+				transform-origin: bottom;
+				transform: rotate(-20deg);
+			}
+			.wrap .paodan {
+				position: absolute;
+				left: 420px;
+				top: -5px;
+				width: 30px;
+				height: 10px;
+				background: black;
+				border-left:15px dotted red ;
+				border-image: webkit-linear-gradient(left red white);
+				border-top-right-radius: 10px;
+				border-bottom-right-radius: 10px;
+				border-right: 3px solid black;
+				transform: rotate(-5deg);
+				animation: paodan 1s both 0s ease-in infinite;
+			}
+			@keyframes paodan{
+				from{left: 420px;top: -5px;opacity: 1;}
+				to{left: 850px;top: -55px;opacity: 0.2;}
+			}
+			
+			.ground {
+				position: absolute;
+				left: 0px;
+				top: 330px;
+				width: 100%;
+				height: 80px;
+				background:#996633;
+				z-index: -1;
+			}
+			.ground img:nth-child(1) {
+				position: absolute;
+				top: 10px;
+				left: 700px;
+				width: 40px;
+				height: 20px;
+				animation: img1 4s both 0s linear infinite;
+			}
+			@keyframes img1{
+				0% {transform: translateX(0);}
+				100% {transform: translateX(-800px);}
+			}
+			.ground img:nth-child(2) {
+				position: absolute;
+				top: 5px;
+				left: 900px;
+				width: 40px;
+				z-index: 300;
+				animation: img2 4s both 0s linear infinite;
+			}
+			@keyframes img2{
+				0% {transform: translateX(0);}
+				100% {transform: translateX(-600px);}
+			}
+			.header {
+				position: absolute;
+				width: 100%;
+				height: 200px;
+				background-image: -webkit-linear-gradient(top,#235ce1,white);
+			}
+			.header img {
+				position: absolute;
+				left: 800px;
+				top: 20px;
+				width: 200px;
+				height: 80px;
+				transform: rotate(180deg);
+				animation: baiyun 8s both 0s linear infinite;
+			}
+			@keyframes baiyun{
+				from{left: 800px;opacity: 1;}
+				to{left: -200px;opacity: 0.5;}
+			}
+			.chanzi {
+				position: absolute;
+				left: 50px;
+				top: 15px;
+				width: 22px;
+				height: 20px;
+				border-top-left-radius: 15px;
+				border-bottom-left-radius: 15px;
+				background: silver;
+			}
+			.bashou {
+				position: absolute;
+				left: 72px;
+				top: 22px;
+				width: 70px;
+				height: 8px;
+				border-top-right-radius: 15px;
+				border-bottom-right-radius: 15px;
+				background: #996633;
+			}
+			.ganggun {
+				position: absolute;
+				left: 150px;
+				top: 22px;
+				width: 180px;
+				height: 5px;
+				border-radius: 10px;
+				background: #4d515a;
+			}
+			.shengzi1 {
+				position: absolute;
+				left: 80px;
+				top: 15px;
+				height: 20px;
+				width: 3px;
+				background: black;
+			}
+			.shengzi2 {
+				position: absolute;
+				left: 120px;
+				top: 15px;
+				height: 20px;
+				width: 3px;
+				background: black;
+			}
+			.shengzi3 {
+				position: absolute;
+				left: 200px;
+				top: 18px;
+				height: 15px;
+				width: 3px;
+				background: black;
+			}
+			.shengzi4 {
+				position: absolute;
+				left: 300px;
+				top: 18px;
+				height: 15px;
+				width: 3px;
+				background: black;
+			}
+			.paiqiguan {
+				position: absolute;
+				left: -20px;
+				width: 20px;
+				height: 35px;
+				background: darkolivegreen;
+				border-top: 5px solid gray;
+				border-radius:4px ;
+				transform-origin: bottom;
+				transform: rotate(-10deg);
+			}
+			div.guanchakong {
+				position: absolute;
+				left: 250px;
+				width: 50px;
+				height: 10px;
+				background: gray;
+				border-top-left-radius: 30px;
+				border-top-right-radius: 30px;
+			}
+			div img {
+				position: absolute;
+				left: -30px;
+				top: -18px;
+				width: 20px;
+				animation: weiqi 0.5s both 0s linear infinite;
+			}
+			@keyframes weiqi{
+				from{transform: translate(0,0) scale(1);opacity: 1;}
+				to{transform: translate(-30px,-40px) scale(2.5);opacity: 0.3;}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<img src="img/2.png"/>
+		</div>
+		<div class="wrap">
+			<!--围裙-->
+			<div class="weiqun"></div>
+			<!--侧装甲-->
+			<div class="cezhuangjia">
+				<div class="chanzi"></div>
+				<div class="bashou"></div>
+				<div class="ganggun"></div>
+				<div class="shengzi1"></div>
+				<div class="shengzi2"></div>
+				<div class="shengzi3"></div>
+				<div class="shengzi4"></div>
+				<div class="paiqiguan"></div>
+				<div class="guanchakong"></div>
+				<img src="img/4.png"/>
+			</div>
+			<!--炮塔-->
+			<div class="paota">
+								<!--炮管-->
+				<div class="paoguan"></div>
+				<!--硝烟器-->
+				<div class="xiaoyanqi"></div>
+				<!--炮根-->
+				<div class="paogen"></div>
+				<!--炮塔盖-->
+				<div class="paotagai">
+					<!--舱盖-->
+					<div class="canggai"></div>
+					<!--天线-->	
+					<div class="tianxian"></div>
+				</div>
+				<div class="paodan"></div>
+				<div class="men">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+ 
+			<!--履带-->
+			<div class="div10">
+				<div class="div10_bottom">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+			<!--第一对负重轮-->
+			<div class="div1">
+				<div class="div11"></div>
+			</div>
+			<div class="div2">
+				<div class="div21"></div>
+			</div>
+			<div class="div3">
+				<div class="div31"></div>
+				<div class="div32"></div>
+			</div>
+			<!--第二对负重轮-->
+			<div class="div4">
+				<div class="div11"></div>
+			</div>
+			<div class="div5">
+				<div class="div21"></div>
+			</div>
+			<div class="div6">
+				<div class="div31"></div>
+				<div class="div32"></div>
+			</div>
+			<!--第三对负重轮-->
+			<div class="div7">
+				<div class="div11"></div>
+			</div>
+			<div class="div8">
+				<div class="div21"></div>
+			</div>
+			<div class="div9">
+				<div class="div31"></div>
+				<div class="div32"></div>
+			</div>
+			
+		</div>
+		<div class="ground">
+			<img src="img/1.png"/>
+			<img src="img/1.png"/>
+		</div>
+	</body>
+
+</html>
